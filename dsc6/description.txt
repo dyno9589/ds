@@ -1,0 +1,3 @@
+Bully Algorithm: Nodes with higher priority bully lower-priority nodes to become the coordinator. If a node detects that the current coordinator has failed, it starts an election process by sending messages to higher-priority nodes. If no higher-priority node responds, the node declares itself the coordinator.
+
+Ring Algorithm: Nodes are arranged in a logical ring. When a node detects that the coordinator has failed, it sends an election message to its successor in the ring. If no response is received, the node declares itself the coordinator and informs other nodes in the ring.
